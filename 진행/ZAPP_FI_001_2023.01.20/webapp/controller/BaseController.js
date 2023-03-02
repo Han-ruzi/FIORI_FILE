@@ -88,12 +88,10 @@ sap.ui.define([
 
 		var oFilters = new Filter("Pldat", FilterOperator.BT ,flDate.Fdate,flDate.Ldate);
 
-		console.log(oFilters);
 
 		oTable.getBinding("items").filter(oFilters, "Application");
 
 		console.log(oTable.getBinding("items").filter(oFilters, "Application"));
-
 		},
 
 		// 월 처음 날짜와 마지막 날짜( 타임스탬프 변환 or 날짜 변환 )
@@ -106,8 +104,8 @@ sap.ui.define([
 
 			switch(dayCase){
 				case "T" :
-				Fdate = Math.floor(initFdate / 1000);
-				Ldate = Math.floor(initLdate / 1000);
+				Fdate = Math.floor(initFdate);
+				Ldate = Math.floor(initLdate);
 				break;
 				case "D" :
 				Fdate = DateFormat.getDateInstance({pattern: "yyyy-MM-dd"}).format(new Date(initFdate));

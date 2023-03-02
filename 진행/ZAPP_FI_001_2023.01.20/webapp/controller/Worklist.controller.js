@@ -132,14 +132,23 @@ sap.ui.define([
 			// iconTab Filter, Filtericon Data Model Set
 			this.setModel(oViewModel, "worklistView");
 
-						            // Filter 
-			this._mFilters = {
-								"complete": [new Filter("Status", FilterOperator.BT,"C", "C")],
-								"progress": [new Filter("Status", FilterOperator.BT,"P" ,"P")],
-								"delay": [new Filter("Status", FilterOperator.BT, "D","D")],
-								"wait": [new Filter("Status", FilterOperator.BT, "W","W")],
-								"countAll": []
-			};
+
+			// var oTable = this.getView().byId("SingleWorklisttable01");
+		    // var oToolbar = this.getView().byId("datelabel01"); // 툴바 컨트롤의 ID를 사용하여 컨트롤 객체 가져오기
+			// var aContent = oToolbar.getProperty("text");
+			// var flDate= this.onDayFirstLast(aContent,"T");
+
+			// 			            // Filter 
+			// this._mFilters = {
+			// 					"complete": [new Filter("Status", FilterOperator.BT,"C", "C"),
+			// 					             new Filter("Pldat", FilterOperator.BT ,flDate.Fdate, flDate.Ldate)
+			// 				    ],
+
+			// 					"progress": [new Filter("Status", FilterOperator.BT,"P" ,"P")],
+			// 					"delay": [new Filter("Status", FilterOperator.BT, "D","D")],
+			// 					"wait": [new Filter("Status", FilterOperator.BT, "W","W")],
+			// 					"countAll": []
+			// };
 			
 			//Table Event handler - Column Dialog 생성 
 			// if(!this._oResponsivePopover){
@@ -294,6 +303,10 @@ sap.ui.define([
 				sKey = oEvent.getParameter("selectedKey");
 
 			oBinding.filter(this._mFilters[sKey]);
+
+			this.onDayFilter(oEvent); // 년 월 필터링 
+
+			this.onUpdateFinished2(oEvent); // 
 		},
 
         onUpdateFinished2 : function (oEvent) {
@@ -303,12 +316,38 @@ sap.ui.define([
 				oViewModel = this.getModel("worklistView"),
 				iTotalItems = oEvent.getParameter("total"),
 				oTableSearchState = [];
+
+				console.log("TEST");
+
+				var oTable = this.getView().byId("SingleWorklisttable01");
+				var oToolbar = this.getView().byId("datelabel01"); // 툴바 컨트롤의 ID를 사용하여 컨트롤 객체 가져오기
+				var aContent = oToolbar.getProperty("text");
+				var flDate= this.onDayFirstLast(aContent,"T");
+	
+										// Filter 
+				this._mFilters = {
+									"complete": [new Filter("Status", FilterOperator.BT,"C", "C"),
+												 new Filter("Pldat", FilterOperator.BT ,flDate.Fdate, flDate.Ldate)
+									],
+	
+									"progress": [new Filter("Status", FilterOperator.BT,"P" ,"P"),
+									             new Filter("Pldat", FilterOperator.BT ,flDate.Fdate, flDate.Ldate)
+								    ],
+									"delay": [new Filter("Status", FilterOperator.BT, "D","D"),
+									          new Filter("Pldat", FilterOperator.BT ,flDate.Fdate, flDate.Ldate)],
+									"wait": [new Filter("Status", FilterOperator.BT, "W","W"),
+									         new Filter("Pldat", FilterOperator.BT ,flDate.Fdate, flDate.Ldate)],
+									"countAll": []
+				};
+
+
 				
 			// only update the counter if the length is final and
 			// the table is not empty
 			if (iTotalItems && oTable.getBinding("items").isLengthFinal()) {
 				sTitle = this.getResourceBundle().getText("worklistTableTitleCount", [iTotalItems]);
 				// Get the count for all the products and set the value to 'countAll' property
+
 
 				this.getModel().read("/WorklistSet/$count", {
 					success: function (oData) {
@@ -319,6 +358,7 @@ sap.ui.define([
 				this.getModel().read("/WorklistSet/$count", {
 					success: function (oData) {
 						oViewModel.setProperty("/complete", oData);
+						console.log(oData);
 					},
 					filters: this._mFilters.complete
 				});

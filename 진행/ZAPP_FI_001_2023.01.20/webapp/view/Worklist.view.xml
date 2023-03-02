@@ -12,7 +12,7 @@
 		toggleHeaderOnTitleClick="false"
 		showFooter="true">
 		<semantic:titleHeading>
-			<Title  text="{worklistView>/sTitle}" />
+		  <Title  text="{worklistView>/sTitle}" />
 		</semantic:titleHeading>
 		<semantic:titleCustomIconActions>
 			<OverflowToolbarButton id="SingleWorklisticonOverflowToolbarButton01"  icon="sap-icon://date-time" text="Calendar" press=".onCalendarurl" />
