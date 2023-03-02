@@ -1,0 +1,62 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+    <ResponsivePopover 
+        title="Sort &#38; Filter"
+        placement="Bottom"
+
+        >
+        <content>
+            <List width="15rem">
+                <items>
+                    <CustomListItem 
+                        type="Active"
+                        press=".onAscending">
+                        <HBox 
+                            alignItems="Start"
+                            justifyContent="Start"
+                            class="HBoxStyle">
+                            <core:Icon
+                                src="sap-icon://sort-ascending"
+                                color="#000000"/>
+                            <HBox width="30px"/>
+                            <Label text="Sort Ascending"/>
+                        </HBox>
+                    </CustomListItem>
+                    <CustomListItem
+                        type="Active"
+                        press=".onDescending">
+                        <HBox 
+                            alignItems="Start"
+                            justifyContent="Start"
+                            class="HBoxStyle">
+                            <core:Icon
+                                src="sap-icon://sort-descending"
+                                color="#000000"/>
+                                <HBox width="30px"/>
+                            <Label  text="Sort Descending"/>
+                        </HBox>
+                    </CustomListItem>
+                    <CustomListItem>
+                        <HBox
+                            alignItems="Start"
+                            justifyContent="Start"
+                            class="HBoxStyle">
+                            <core:Icon
+                                src="sap-icon://filter"                                
+                                color="#000000"/>
+                            <HBox width="30px"/>            
+                            <Input id="singleinput01" width="90%" change=".onChange"/>
+                            <Input id="singleinput02" width="90%" change=".onChange"/>
+                            <Input id="singleinput03" width="90%" change=".onChange"/>
+                            <Input id="singleinput04" width="90%" change=".onChange"/>
+                            <Input id="singleinput05" width="90%" change=".onChange"/>
+                            <Input id="singleinput06" width="90%" change=".onChange"/>
+                            <Input id="singleinput07" width="90%" change=".onChange"/>
+                        </HBox>
+                    </CustomListItem>
+                </items>
+            </List>
+        </content>
+    </ResponsivePopover>
+</core:FragmentDefinition>

@@ -1,0 +1,312 @@
+<mvc:View
+	controllerName="com.smilegate.zappfi001.controller.Worklist"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.f.semantic"
+	xmlns:plugins="sap.m.plugins">
+
+	<semantic:SemanticPage
+		id="SingleWokrlistpage01"
+		headerPinnable="false"
+		toggleHeaderOnTitleClick="false"
+		showFooter="true">
+		<semantic:titleHeading>
+			<Title  text="{worklistView>/sTitle}" />
+		</semantic:titleHeading>
+		<semantic:titleCustomIconActions>
+			<OverflowToolbarButton id="SingleWorklisticonOverflowToolbarButton01"  icon="sap-icon://date-time" text="Calendar" press=".onCalendarurl" />
+		</semantic:titleCustomIconActions>
+		<semantic:headerContent>
+			<IconTabBar
+				id="SingleWorklisticonTabBar01"
+				select=".onQuickFilter"
+				expandable="false"
+				tabDensityMode="Cozy">
+				<items>
+					<IconTabFilter
+						id="SingleWorklistIconTabFilter01W"
+						key="countAll"
+						showAll="true"
+						count="{worklistView>/countAll}"
+						text="{i18n>WorklistFiltertasksAll}"/>
+					<IconTabSeparator id="_IDGenIconTabSeparator1"/>
+					<IconTabFilter
+						id="SingleWorklistIconTabFilter02C"
+						key="complete"
+						icon="sap-icon://message-success"
+						iconColor="Positive"
+						count="{worklistView>/complete}"
+						text="{i18n>WorklistFilterComplete}"/>
+					<IconTabFilter
+						id="SingleWorklistIconTabFilter03P"
+						key="progress"
+						icon="sap-icon://message-warning"
+						iconColor="Critical"
+						count="{worklistView>/progress}"
+						text="{i18n>WorklistFilterProgress}"/>
+					<IconTabFilter
+						id="SingleWorklistIconTabFilter04D"
+						key="delay"
+						icon="sap-icon://message-error"
+						iconColor="Negative"
+						count="{worklistView>/delay}"
+						text="{i18n>WorklistFilterDelay}"/>
+					<IconTabFilter
+						id="SingleWorklistIconTabFilter05W"
+						key="wait"
+						icon="sap-icon://pending"
+						iconColor="Neutral"
+						count="{worklistView>/wait}"
+						text="{i18n>WorklistFilterWait}"/>
+				</items>
+				<content>
+					<Table
+						id="SingleWorklisttable01"
+						class= "sapUiSizeCompact tableStyle"
+						fixedLayout="false"
+						busyIndicatorDelay="{worklistView>/tableBusyDelay}"
+						growing="false"
+						growingScrollToLoad="false"
+						noDataText="{worklistView>/tableNoDataText}"
+						updateStarted="onUpdateStarted"
+						updateFinished=".onUpdateFinished2"
+						width="auto"
+						mode="MultiSelect"
+						items="{
+							path : '/WorklistSet'
+						}"
+					>
+					<headerToolbar>
+						<Toolbar>
+							<Title
+								id="SingleWorklistTitle02"
+								text="{worklistView>/worklistTableTitle}"/>
+							<ToolbarSpacer/>
+							<content>
+								<HBox id="SingleWorklistHBox01" alignContent="Center" justifyContent="Start">
+									<FlexBox id="SingleWorklistFlexBox01" justifyContent="Start">
+										<core:Icon 
+											id="SingleWorklistIcon01"
+											src="sap-icon://media-reverse"
+											color="#000000"
+											press=".onlastmonth"/>
+									</FlexBox>
+								</HBox>
+								<HBox id="SingleWorklistHBox02" alignContent="Center" justifyContent="Center">											
+									<FlexBox id="SingleWorklistFlexBox02" justifyContent="Center">
+										<Label text="{worklistView>/worklistDateLabel}" id="datelabel01"/>
+									</FlexBox>					
+								</HBox>
+								<HBox id="SingleWorklistHBox03" alignContent="Center" justifyContent="Center">																		
+									<FlexBox id="SingleWorklistFlexBox03" justifyContent="End">
+										<core:Icon 
+											id="SingleWorklistIcon02"
+											src="sap-icon://media-play"
+											color="#000000"
+											press=".onnextmonth"
+											/>
+									</FlexBox>					
+								</HBox>
+								<HBox id="SingleWorklistHBox04" width="3px"/>
+								<HBox id="SingleWorklistHBox05" alignContent="Center" justifyContent="Center">																		
+									<FlexBox id="SingleWorklistFlexBox04" justifyContent="End">
+										<Button
+											id="SingleWorklistButton01"
+											tooltip="Sort &#38; Filter Reset"
+											text="Sort &#38; Filter Reset"
+											press=".onSortFilterReset"/>
+									</FlexBox>					
+								</HBox>
+								<HBox id="SingleWorklistHBox06" width="35px"/>
+							</content>							
+						</Toolbar>
+					</headerToolbar>
+						<dependents>
+							<plugins:ColumnResizer id="SingleWorklistColumnResizer01"/>
+						</dependents>
+						<columns>
+							<Column id="SingleWorklistColumn01"
+								hAlign="Left"
+								vAlign="Middle"
+								width="10%"
+								demandPopin="false"
+								minScreenWidth="Tablet"
+								mergeDuplicates="true"
+								>
+								<!-- mergeFunctionName="data#mergeKey" -->
+								<HBox>								
+								
+									<Text id="SingleWorklistText01" class="columnTextStyle"  text="{/#Worklist/Pldat/@sap:label}"/>
+									<HBox width="5px"/>
+									<core:Icon
+										id="SingleWorklistIcon03"
+										src="sap-icon://filter"
+										color="#000000"
+										visible="{worklistView>/filtericon01}"/>
+								</HBox>
+							</Column>
+							<Column id="SingleWorklistColumn02"
+								hAlign="Left"
+								vAlign="Middle"
+								width="10%"
+								demandPopin="false"
+								minScreenWidth="Tablet"
+								mergeDuplicates="true"
+								mergeFunctionName="data#mergeKey">
+								<HBox>
+									<Text id="SingleWorklistText02" class="columnTextStyle" text="{/#Worklist/Zfchidt/@sap:label}"/>
+									<HBox width="5px"/>
+									<core:Icon
+										id="SingleWorklistIcon04"
+										src="sap-icon://filter"
+										color="#000000"
+										visible="{worklistView>/filtericon02}"/>
+								</HBox>	
+							</Column>
+							<Column id="SingleWorklistColumn03"
+									hAlign="Left"
+									vAlign="Middle"
+									width="10%"
+									demandPopin="false"
+									minScreenWidth="Tablet"
+									mergeDuplicates="true"
+									mergeFunctionName="data#mergeKey">
+								<HBox>
+									<Text id="SingleWorklistText03" class="columnTextStyle" text="{/#Worklist/Zfcmidt/@sap:label}"/>
+									<HBox width="5px"/>
+									<core:Icon
+									id="SingleWorklistIcon05"
+									src="sap-icon://filter"
+									color="#000000"
+									visible="{worklistView>/filtericon03}"/>
+								</HBox>
+							</Column>
+							<Column
+								id="SingleWorklistColumn04"
+								hAlign="Left"
+								vAlign="Inherit"
+								width="30%"
+								demandPopin="false"
+								minScreenWidth="Tablet">
+								<HBox>
+									<Text id="SingleWorklistText04" class="columnTextStyle" text="{/#Worklist/Zfcactidt/@sap:label}"/>
+									<HBox width="5px"/>
+									<core:Icon
+										id="SingleWorklistIcon06"
+										src="sap-icon://filter"
+										color="#000000"
+										visible="{worklistView>/filtericon04}"/>
+								</HBox>
+							</Column>
+							<Column id="SingleWorklistColumn05"
+								hAlign="Left"
+								vAlign="Middle"
+								width="10%"	
+								demandPopin="false"
+								minScreenWidth="Tablet">
+								<HBox>
+									<Text id="SingleWorklistText05" class="columnTextStyle" text="{/#Worklist/Butxt/@sap:label}"/>
+									<HBox width="5px"/>
+									<core:Icon
+										id="SingleWorklistIcon07"
+										src="sap-icon://filter"
+										color="#000000"
+										visible="{worklistView>/filtericon05}"/>
+								</HBox>
+							</Column>
+							<Column id="SingleWorklistColumn06"
+								hAlign="Left"
+								vAlign="Middle"
+								width="10%"	
+								demandPopin="false"
+								minScreenWidth="Tablet">
+								<HBox>
+									<Text id="SingleWorklistText06" class="columnTextStyle" text="{/#Worklist/Ktext/@sap:label}"/>
+									<HBox width="5px"/>
+									<core:Icon
+										id="SingleWorklistIcon08"
+										src="sap-icon://filter"
+										color="#000000"
+										visible="{worklistView>/filtericon06}"/>
+								</HBox>
+							</Column>
+							<Column id="SingleWorklistColumn07"
+								hAlign="Left"
+								vAlign="Middle"	
+								width="10%"
+								demandPopin="false"
+								minScreenWidth="Tablet">
+								<HBox>
+									<Text id="SingleWorklistText07" class="columnTextStyle" text="{/#Worklist/Name_last/@sap:label}"/>
+									<HBox width="5px"/>
+									<core:Icon
+										id="SingleWorklistIcon09"
+										src="sap-icon://filter"
+										color="#000000"
+										visible="{worklistView>/filtericon07}"/>
+								</HBox>
+							</Column>
+							<Column
+								id="SingleWorklistColumn08"
+								hAlign="Left"
+								vAlign="Middle"
+								width="10%"
+								demandPopin="false"
+								minScreenWidth="Tablet">
+								<HBox>
+									<Text id="SingleWorklistText08" class="columnTextStyle" text="{/#Worklist/Status/@sap:label}"/>
+								</HBox>
+							</Column>
+						</columns>
+					<items>
+						<ColumnListItem 
+							vAlign="Middle"
+							type="Navigation"
+							press=".onPress">
+							<cells>
+								<Text 
+									  text = "{
+											path : 'Pldat',
+											formatter: '.formatter.DateSet'}">
+									<customData>
+										<core:CustomData key="mergeKey" value="{Pldat}"/>
+									</customData>
+								</Text>	
+								<Text text = "{Zfchidt}">
+									<customData>
+										<core:CustomData key="mergeKey" value="{Pldat}{Zfchidt}"/>
+									</customData>
+								</Text>	
+								<Text  text = "{Zfcmidt}">
+									<customData>
+										<core:CustomData  key="mergeKey" value="{Pldat}{Zfchidt}{Zfcmidt}"/>
+									</customData>
+								</Text>	
+								<Text text="{Zfcactidt}" />
+								<Text text="{Butxt}" />
+								<Text text="{Ktext}" />   
+								<Text text="{Name_last}" />   
+								<ObjectStatus
+									text="{
+										path: 'Status',
+										formatter: '.formatter.Status'}"
+									state="{
+										path: 'Status',
+										formatter: '.formatter.StatusState'}"/>	 
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</IconTabBar>
+		</semantic:headerContent>
+		<semantic:messagesIndicator>
+			<semantic:MessagesIndicator id="SingleWorklistMessageIndicator02" press="onMessagesButtonPress"/>
+		</semantic:messagesIndicator>
+		<semantic:footerCustomActions>
+			<Button id="SingleWorklistButton02" icon="sap-icon://message-success" class="positivebutton Positiveicon"  text="{i18n>WorklistFooterComplete}" press=".onCompletion"  />
+			<Button id="SingleWorklistButton03" icon="sap-icon://message-success" class="neagtivebutton Negativeicon"  text="{i18n>WorklistFooterCancel}" press=".onCancel"  />
+		</semantic:footerCustomActions>
+	</semantic:SemanticPage>
+</mvc:View>

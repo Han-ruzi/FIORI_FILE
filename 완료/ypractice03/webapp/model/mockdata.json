@@ -1,0 +1,415 @@
+{
+    "d": {
+        "results": [
+            {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='ES',Connid='0012')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='ES',Connid='0012')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "ES",
+                "Connid": "0012",
+                "Carrname": "ES",
+                "Planetype": "",
+                "Info": "",
+                "Producer": "KK",
+                "Status": "KK",
+                "Depdate": "\/Date(1643760000000)\/",
+                "Deptime": "PT00H00M00S",
+                "Arrdate": null,
+                "Arrtime": "PT00H00M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='KK',Connid='1234')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='KK',Connid='1234')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "KK",
+                "Connid": "1234",
+                "Carrname": "KK",
+                "Planetype": "",
+                "Info": "",
+                "Producer": "vKK",
+                "Status": "KK",
+                "Depdate": "\/Date(1651622400000)\/",
+                "Deptime": "PT00H00M00S",
+                "Arrdate": null,
+                "Arrtime": "PT00H00M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='AA',Connid='0064')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='AA',Connid='0064')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "AA",
+                "Connid": "0064",
+                "Carrname": "American Airlines",
+                "Planetype": "A340-600",
+                "Info": "(US)SAN FRANCISCO->(US)NEW YORK",
+                "Producer": "A",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640995200000)\/",
+                "Deptime": "PT09H00M00S",
+                "Arrdate": "\/Date(1640995200000)\/",
+                "Arrtime": "PT17H21M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='AZ',Connid='0555')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='AZ',Connid='0555')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "AZ",
+                "Connid": "0555",
+                "Carrname": "Alitalia",
+                "Planetype": "A319-100",
+                "Info": "(IT)ROME->(DE)FRANKFURT",
+                "Producer": "A",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640822400000)\/",
+                "Deptime": "PT19H00M00S",
+                "Arrdate": "\/Date(1640822400000)\/",
+                "Arrtime": "PT21H05M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='UA',Connid='0941')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='UA',Connid='0941')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "UA",
+                "Connid": "0941",
+                "Carrname": "United Airlines",
+                "Planetype": "767-200",
+                "Info": "(DE)FRANKFURT->(US)SAN FRANCISCO",
+                "Producer": "BOE",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640908800000)\/",
+                "Deptime": "PT14H30M00S",
+                "Arrdate": "\/Date(1640908800000)\/",
+                "Arrtime": "PT17H06M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='AZ',Connid='0789')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='AZ',Connid='0789')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "AZ",
+                "Connid": "0789",
+                "Carrname": "Alitalia",
+                "Planetype": "A380-800",
+                "Info": "(JP)TOKYO->(IT)ROME",
+                "Producer": "A",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640822400000)\/",
+                "Deptime": "PT11H45M00S",
+                "Arrdate": "\/Date(1640822400000)\/",
+                "Arrtime": "PT19H25M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='LH',Connid='0402')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='LH',Connid='0402')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "LH",
+                "Connid": "0402",
+                "Carrname": "Lufthansa",
+                "Planetype": "A380-800",
+                "Info": "(DE)FRANKFURT->(US)NEW YORK",
+                "Producer": "A",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640649600000)\/",
+                "Deptime": "PT13H30M00S",
+                "Arrdate": "\/Date(1640649600000)\/",
+                "Arrtime": "PT15H05M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='QF',Connid='0005')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='QF',Connid='0005')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "QF",
+                "Connid": "0005",
+                "Carrname": "Qantas Airways",
+                "Planetype": "A340-600",
+                "Info": "(SG)SINGAPORE->(DE)FRANKFURT",
+                "Producer": "A",
+                "Status": "INCOMPLETE",
+                "Depdate": "\/Date(1640995200000)\/",
+                "Deptime": "PT22H50M00S",
+                "Arrdate": "\/Date(1641081600000)\/",
+                "Arrtime": "PT05H35M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='SQ',Connid='0015')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='SQ',Connid='0015')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "SQ",
+                "Connid": "0015",
+                "Carrname": "Singapore Airlines",
+                "Planetype": "A380-800",
+                "Info": "(US)SAN FRANCISCO->(SG)SINGAPORE",
+                "Producer": "A",
+                "Status": "INCOMPLETE",
+                "Depdate": "\/Date(1640822400000)\/",
+                "Deptime": "PT16H00M00S",
+                "Arrdate": "\/Date(1640908800000)\/",
+                "Arrtime": "PT02H45M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='SQ',Connid='0002')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='SQ',Connid='0002')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "SQ",
+                "Connid": "0002",
+                "Carrname": "Singapore Airlines",
+                "Planetype": "A380-800",
+                "Info": "(SG)SINGAPORE->(US)SAN FRANCISCO",
+                "Producer": "A",
+                "Status": "INCOMPLETE",
+                "Depdate": "\/Date(1640908800000)\/",
+                "Deptime": "PT17H00M00S",
+                "Arrdate": "\/Date(1640908800000)\/",
+                "Arrtime": "PT19H25M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='LH',Connid='0401')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='LH',Connid='0401')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "LH",
+                "Connid": "0401",
+                "Carrname": "Lufthansa",
+                "Planetype": "767-200",
+                "Info": "(US)NEW YORK->(DE)FRANKFURT",
+                "Producer": "BOE",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640995200000)\/",
+                "Deptime": "PT18H30M00S",
+                "Arrdate": "\/Date(1641081600000)\/",
+                "Arrtime": "PT07H45M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='DL',Connid='0106')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='DL',Connid='0106')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "DL",
+                "Connid": "0106",
+                "Carrname": "Delta Airlines",
+                "Planetype": "A340-600",
+                "Info": "(US)NEW YORK->(DE)FRANKFURT",
+                "Producer": "A",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640649600000)\/",
+                "Deptime": "PT19H35M00S",
+                "Arrdate": "\/Date(1640736000000)\/",
+                "Arrtime": "PT09H30M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='JL',Connid='0407')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='JL',Connid='0407')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "JL",
+                "Connid": "0407",
+                "Carrname": "Japan Airlines",
+                "Planetype": "A380-800",
+                "Info": "(JP)TOKYO->(DE)FRANKFURT",
+                "Producer": "A",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640995200000)\/",
+                "Deptime": "PT13H30M00S",
+                "Arrdate": "\/Date(1640995200000)\/",
+                "Arrtime": "PT17H35M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='JL',Connid='0408')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='JL',Connid='0408')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "JL",
+                "Connid": "0408",
+                "Carrname": "Japan Airlines",
+                "Planetype": "747-400",
+                "Info": "(DE)FRANKFURT->(JP)TOKYO",
+                "Producer": "BOE",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1641081600000)\/",
+                "Deptime": "PT20H25M00S",
+                "Arrdate": "\/Date(1641168000000)\/",
+                "Arrtime": "PT15H40M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='LH',Connid='2402')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='LH',Connid='2402')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "LH",
+                "Connid": "2402",
+                "Carrname": "Lufthansa",
+                "Planetype": "A380-800",
+                "Info": "(DE)FRANKFURT->(DE)BERLIN",
+                "Producer": "A",
+                "Status": "INCOMPLETE",
+                "Depdate": "\/Date(1641081600000)\/",
+                "Deptime": "PT10H30M00S",
+                "Arrdate": "\/Date(1641081600000)\/",
+                "Arrtime": "PT11H35M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='DL',Connid='1699')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='DL',Connid='1699')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "DL",
+                "Connid": "1699",
+                "Carrname": "Delta Airlines",
+                "Planetype": "767-200",
+                "Info": "(US)NEW YORK->(US)SAN FRANCISCO",
+                "Producer": "BOE",
+                "Status": "PROCEEDING",
+                "Depdate": "\/Date(1640649600000)\/",
+                "Deptime": "PT17H15M00S",
+                "Arrdate": "\/Date(1640649600000)\/",
+                "Arrtime": "PT20H37M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='DL',Connid='1984')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='DL',Connid='1984')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "DL",
+                "Connid": "1984",
+                "Carrname": "Delta Airlines",
+                "Planetype": "A380-800",
+                "Info": "(US)SAN FRANCISCO->(US)NEW YORK",
+                "Producer": "A",
+                "Status": "PROCEEDING",
+                "Depdate": "\/Date(1640649600000)\/",
+                "Deptime": "PT10H00M00S",
+                "Arrdate": "\/Date(1640649600000)\/",
+                "Arrtime": "PT18H25M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='LH',Connid='2407')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='LH',Connid='2407')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "LH",
+                "Connid": "2407",
+                "Carrname": "Lufthansa",
+                "Planetype": "A320-200",
+                "Info": "(DE)BERLIN->(DE)FRANKFURT",
+                "Producer": "A",
+                "Status": "PROCEEDING",
+                "Depdate": "\/Date(1641081600000)\/",
+                "Deptime": "PT07H10M00S",
+                "Arrdate": "\/Date(1641081600000)\/",
+                "Arrtime": "PT08H15M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='UA',Connid='3504')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='UA',Connid='3504')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "UA",
+                "Connid": "3504",
+                "Carrname": "United Airlines",
+                "Planetype": "A380-800",
+                "Info": "(US)SAN FRANCISCO->(DE)FRANKFURT",
+                "Producer": "A",
+                "Status": "PROCEEDING",
+                "Depdate": "\/Date(1640995200000)\/",
+                "Deptime": "PT15H00M00S",
+                "Arrdate": "\/Date(1641081600000)\/",
+                "Arrtime": "PT10H30M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='AZ',Connid='0788')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='AZ',Connid='0788')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "AZ",
+                "Connid": "0788",
+                "Carrname": "Alitalia",
+                "Planetype": "A380-800",
+                "Info": "(IT)ROME->(JP)TOKYO",
+                "Producer": "A",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640736000000)\/",
+                "Deptime": "PT12H00M00S",
+                "Arrdate": "\/Date(1640822400000)\/",
+                "Arrtime": "PT08H55M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='AZ',Connid='0790')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='AZ',Connid='0790')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "AZ",
+                "Connid": "0790",
+                "Carrname": "Alitalia",
+                "Planetype": "747-400",
+                "Info": "(IT)ROME->(JP)OSAKA",
+                "Producer": "BOE",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640822400000)\/",
+                "Deptime": "PT10H35M00S",
+                "Arrdate": "\/Date(1640908800000)\/",
+                "Arrtime": "PT08H10M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='QF',Connid='0006')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='QF',Connid='0006')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "QF",
+                "Connid": "0006",
+                "Carrname": "Qantas Airways",
+                "Planetype": "767-200",
+                "Info": "(DE)FRANKFURT->(SG)SINGAPORE",
+                "Producer": "BOE",
+                "Status": "INCOMPLETE",
+                "Depdate": "\/Date(1640822400000)\/",
+                "Deptime": "PT20H55M00S",
+                "Arrdate": "\/Date(1640908800000)\/",
+                "Arrtime": "PT15H05M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='SQ',Connid='0158')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='SQ',Connid='0158')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "SQ",
+                "Connid": "0158",
+                "Carrname": "Singapore Airlines",
+                "Planetype": "A320-200",
+                "Info": "(SG)SINGAPORE->(ID)JAKARTA",
+                "Producer": "A",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640736000000)\/",
+                "Deptime": "PT15H25M00S",
+                "Arrdate": "\/Date(1640736000000)\/",
+                "Arrtime": "PT16H00M00S"
+            }, {
+                "__metadata": {
+                    "id": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='SQ',Connid='0988')",
+                    "uri": "https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/YUX_FIORI_TEST11_SRV/SFLIGHTSet(Carrid='SQ',Connid='0988')",
+                    "type": "YUX_FIORI_TEST11_SRV.SFLIGHT"
+                },
+                "Carrid": "SQ",
+                "Connid": "0988",
+                "Carrname": "Singapore Airlines",
+                "Planetype": "A340-600",
+                "Info": "(SG)SINGAPORE->(JP)TOKYO",
+                "Producer": "A",
+                "Status": "COMPLETE",
+                "Depdate": "\/Date(1640908800000)\/",
+                "Deptime": "PT16H35M00S",
+                "Arrdate": "\/Date(1640995200000)\/",
+                "Arrtime": "PT00H15M00S"
+            }
+        ]
+    }
+}

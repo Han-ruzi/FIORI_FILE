@@ -1,0 +1,56 @@
+<mvc:View controllerName="ANS.ypratice04.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:semantic="sap.m.semantic">
+    <Page id="page" title="{i18n>title}">
+        <Table 
+            id ="Table01" 
+            items="{path: '/SCARRSet' }"
+            mode="None">
+            <columns>
+                <Column id="Column01">
+                    <Text id="text01" text="{/#SCARR/Carrid/@sap:label}" />
+                </Column>
+                <Column id="Column02">
+                    <Text id="text02" text="{/#SCARR/Carrname/@sap:label}" />
+                </Column>
+                <Column id="Column03">
+                    <Text id="text03" text="{/#SCARR/Currcode/@sap:label}" />
+                </Column>
+                <Column id="Column04">
+                    <Text id="text04" text="{/#SCARR/Url/@sap:label}" />
+                </Column>
+            </columns>
+
+            <items>
+                <ColumnListItem 
+                    id ="ColumnListItem01" 
+                    vAlign="Middle"
+                    type="Navigation"
+                    press=".fnPressList">
+                    <cells>
+                        <ObjectIdentifier
+                            id="ObjectIdentifier01"
+                            title="{Carrid}"
+                            />
+                        <Text
+                            id="text05"
+                            text="{Carrname}" />
+                        <Text
+                            id="text06"
+                            text="{Currcode}" />
+                        <Text
+                            id="text07"
+                            text="{Url}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+
+
+
+
+
+        </Table>
+
+    </Page>
+</mvc:View>

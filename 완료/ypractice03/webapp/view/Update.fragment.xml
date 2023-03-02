@@ -1,0 +1,43 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core" >
+   <Dialog
+      id="CreateDialog"
+      title="Create Row">
+      
+    <content>
+        <Table id="Table03"
+            mode="None">
+            <columns>
+                <Column >
+                    <Text text="{/#SFLIGHT/Carrname/@sap:label}" />
+                </Column>
+                <Column >
+                    <Text  text="{/#SFLIGHT/Producer/@sap:label}" />
+                </Column>
+                <Column>
+                    <Text  text="{/#SFLIGHT/Status/@sap:label}" />
+                </Column>
+
+            </columns>
+            <items>
+
+            </items>
+       </Table>
+    </content>
+
+        <Button
+        text="저장"
+        press=".onUpdateDialog"/>
+        
+        <Button
+           text="닫기"
+           press=".onCloseDialog"/>
+
+
+
+   </Dialog>
+
+
+
+</core:FragmentDefinition>

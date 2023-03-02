@@ -1,0 +1,55 @@
+<mvc:View controllerName="ANS.ypratice04.controller.Object"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:semantic="sap.m.semantic">
+    <Page id="page" title="{i18n>title}">
+        <Table 
+            id ="Table02" 
+            items="{path: '/SFLIGHTSet' }"
+            mode="None">
+            <columns>
+                <Column >
+                    <Text  text="{/#SFLIGHT/Carrid/@sap:label}" />
+                </Column>
+                <Column >
+                    <Text text="{/#SFLIGHT/Planetype/@sap:label}" />
+                </Column>
+                <Column >
+                    <Text text="{/#SFLIGHT/Fldate/@sap:label}" />
+                </Column>
+                <Column >
+                    <Text  text="{/#SFLIGHT/Price/@sap:label}" />
+                </Column>
+            </columns>
+
+            <items>
+                <ColumnListItem 
+                    vAlign="Middle"
+                    type="Navigation"
+                    press=".fnPressList">
+                    <cells>
+                        <ObjectIdentifier
+                            title="{Carrid}"
+                            text="{Connid}"
+                            />
+                        <Text
+                            text="{Planetype}" />
+                        <Text
+                            text="{Fldate}" />
+                        <ObjectNumber
+                            number="{
+                                parts:[
+                                    {path:'Price'},
+                                    {path:'Currency'}
+                                ],
+                                type: 'sap.ui.model.type.Currency',
+                                formatOptions: {showMeasure: false}
+                            }"
+                            unit="{Currency}"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+    </Page>
+</mvc:View>

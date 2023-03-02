@@ -1,0 +1,80 @@
+/* Enter your custom styles here */
+
+.sapMShellAppWidthLimited .sapMShellCentralBox {
+    width: 100% !important;
+    margin-left: 0px !important;
+    left: 0 !important;
+}
+
+.sapMBtn.Positiveicon .sapMBtnIcon {
+    color : #2B7D2B ;
+}
+.sapMBtn.Negativeicon .sapMBtnIcon {
+    color : #BB0000 ;
+}
+
+
+.positivebutton .sapMBtnInner {
+    color: #2B7D2B;
+    border: 1.5px solid #2B7D2B ;
+    
+}
+.neagtivebutton .sapMBtnInner {
+    color: #BB0000;
+    border: 1.5px solid #BB0000 ;
+}
+
+
+.sapMBtn.CommentButton  {
+    width:  5rem;
+    height: 4.5rem;
+    padding-top: 0.25rem;
+    padding-right: 0.25rem;
+    padding-bottom: 0.25rem;
+    position:  sticky;
+    right: 0.5rem;
+    bottom: 0.25rem;
+}
+
+.sapMBtn.Commenticon .sapMBtnIcon {
+    width: 2.375rem;
+    height: 2.375rem;
+    padding: 0.7rem;
+    font-size: 1.8rem;
+    line-height: 2.375rem;
+}
+
+.CommentButtoninner .sapMBtnInner {
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+}
+
+.sapMFlexBox.commetFlexbox {
+  
+    /* display: block; */
+    /* border : .0625rem so;
+     */
+    /* background-color:  #c8c8c8c8; */
+    position: relative;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    box-sizing: border-box;
+
+}
+
+.HBoxStyle {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+}
+
+.tableStyle .sapMListTblHeader {
+    cursor: pointer;
+}
+
+.columnTextStyle{
+    cursor: pointer !important;
+}
+
+

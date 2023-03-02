@@ -1,0 +1,9 @@
+<mvc:View controllerName="com.smilegate.zappfi001.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Shell>
+		<App id="app"
+			busy="{appView>/busy}"
+			busyIndicatorDelay="{appView>/delay}"/>
+	</Shell>
+</mvc:View>

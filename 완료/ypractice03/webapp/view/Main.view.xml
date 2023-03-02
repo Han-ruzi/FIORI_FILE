@@ -1,0 +1,144 @@
+<mvc:View controllerName="com.smilegate.ypratice03.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:semantic="sap.m.semantic">
+    <Page id="page" title="{i18n>title}">
+        <Table 
+            id ="Table01" 
+            items="{path: 'mockdata>/d/results'}"
+            mode="MultiSelect">
+            <columns>
+                <Column id="Column01">
+                    <Text id="text01" text="{/#SFLIGHT/Carrid/@sap:label}" />
+                </Column>
+                <Column id="Column02">
+                    <Text id="text02" text="{/#SFLIGHT/Carrname/@sap:label}" />
+                </Column>
+                <Column id="Column03">
+                    <Text id="text03" text="{/#SFLIGHT/Planetype/@sap:label}" />
+                </Column>
+                <Column id="Column04">
+                    <Text id="text04" text="{/#SFLIGHT/Info/@sap:label}" />
+                </Column>
+                
+                <Column id="Column05">
+                    <Text id="text05" text="{/#SFLIGHT/Producer/@sap:label}" />
+                </Column>
+
+                <Column id="Column06">
+                    <Text id="text06" text="{/#SFLIGHT/Status/@sap:label}" />
+                </Column>
+
+                <Column id="Column07">
+                    <Text id="text07" text="{/#SFLIGHT/Depdate/@sap:label}" />
+                </Column>
+
+                <Column id="Column08">
+                    <Text id="text08" text="{/#SFLIGHT/Deptime/@sap:label}" />
+                </Column>
+
+                <Column id="Column09">
+                    <Text id="text09" text="{/#SFLIGHT/Arrdate/@sap:label}" />
+                </Column>
+
+                <Column id="Column10">
+                    <Text id="text10" text="{/#SFLIGHT/Arrtime/@sap:label}" />
+                </Column>
+
+            </columns>
+            <items>
+                <ColumnListItem id ="ColumnListItem01" vAlign="Middle">
+                    <cells>
+                        <ObjectIdentifier
+                            id="ObjectIdentifier01"
+                            title="{mockdata>Carrid}"
+                            text="{mockdata>Connid}"/>
+                        <Text
+                            id="text11"
+                            text="{mockdata>Carrname}" />
+                        <Text
+                            id="text12"
+                            text="{mockdata>Planetype}" />
+                        <Text
+                            id="text13"
+                            text="{mockdata>Info}" />    
+                        <Text
+                            id="text14"
+                            text="{mockdata>Producer}" />       
+                        <Text
+                            id="text16"
+                            text="{mockdata>Status}" />   
+                         <!-- <Text
+                            id="text17"
+                            text="{ path : 'mockdata>Depdate',
+                                    type : 'sap.ui.model.type.Date',
+                                    formatOptions:{
+                                       style :'short'
+                                    }
+                                  }" />     -->
+                        <!-- <Text
+                            id="text18"
+                            text="{ path : 'Deptime',
+                            type : 'sap.ui.model.type.DateTime',
+                            formatOptions:{
+                               style :'short'
+                            }
+                          }" />                      
+                        <Text
+                        id="text19"
+                        text="{ path : 'Arrdate',
+                        type : 'sap.ui.model.type.Date',
+                        formatOptions:{
+                           style :'short'
+                        }
+                      }" />   
+                        <Text
+                            id="text20"
+                            text="{ path : 'Arrtime',
+                            type : 'sap.ui.model.type.DateTime',
+                                    formatOptions:{
+                                       style :'short'
+                            }
+                                  }" />   -->
+                        <Text
+                            id="text17"
+                            text="{ path : 'mockdata>Depdate',
+                                    formatter : '.formatter.fnDaySet'}" />    
+                        <Text
+                            id="text18"
+                            text="{ path : 'Deptime',
+                                    formatter : '.formatter.fnTimeSet'}" />                      
+                        <Text
+                        id="text19"
+                        text="{ path : 'Arrdate',
+                                formatter : '.formatter.fnDaySet'}" />   
+                        <!-- <Text
+                            id="text20"
+                            text="{ path : 'Arrtime',
+                                    formatter : '.formatter.fnTimeSet'}" /> -->
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+        <footer>
+			<OverflowToolbar id="otbFooter">
+				<ToolbarSpacer/>
+				<Button type="Accept" text="UPDATE" press="fnUpdate">
+					<layoutData><OverflowToolbarLayoutData priority="NeverOverflow" /></layoutData>
+				</Button>
+				<Button type="Reject" text="DELETE" press="fnDelete">
+					<layoutData><OverflowToolbarLayoutData priority="NeverOverflow" /></layoutData>
+				</Button>
+
+                <Button type="Emphasized" text="CREATE" press="fnCreate">
+
+                    
+				</Button>
+
+
+			</OverflowToolbar>
+		</footer>
+
+    </Page>
+</mvc:View>

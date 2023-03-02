@@ -1,0 +1,114 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+<edmx:DataServices m:DataServiceVersion="2.0">
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZUX_FI_03_SRV" xml:lang="ko" sap:schema-version="1">
+<Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Core.SchemaVersion" String="1.0.0"/>
+<EntityType Name="Worklist" sap:content-version="1">
+<Key>
+<PropertyRef Name="Bukrs"/>
+<PropertyRef Name="Spmon"/>
+<PropertyRef Name="Zfchid"/>
+<PropertyRef Name="Zfcmid"/>
+<PropertyRef Name="Zfcactid"/>
+</Key>
+<Property Name="Bukrs" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="회사 코드" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Butxt" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="회사" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Fpldat" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="계획완료일" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Spmon" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="결산년월" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfchid" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="대분류 ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfcmid" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="중분류 ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfcactid" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="결산 Activity ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfchidt" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:label="대분류 내역" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfcmidt" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:label="중분류 내역" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfcactidt" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:label="결산 Activity 내역" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfccycle" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="결산주기" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfcdue" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="결산기한" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Kostl" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="코스트 센터" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Ktext" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="팀" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Bname" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="사용자 마스터 레코드의 사용자 이름" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Name_last" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="담당자" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Pldat" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="계획완료일" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Pltim" Type="Edm.Time" Nullable="false" Precision="0" sap:unicode="false" sap:label="계획완료시간" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Acdat" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="실제완료일" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Actim" Type="Edm.Time" Precision="0" sap:unicode="false" sap:label="실제완료시간" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="상태" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zcomment" Type="Edm.String" MaxLength="255" sap:unicode="false" sap:label="코멘트" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="holiday" sap:content-version="1">
+<Key>
+<PropertyRef Name="Date"/>
+</Key>
+<Property Name="Date" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="일자" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Holiday" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="표시" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="TxtShort" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="공휴일: 내역" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="TxtLong" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="휴일설명" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="Calendar" sap:content-version="1">
+<Key>
+<PropertyRef Name="Bukrs"/>
+<PropertyRef Name="Spmon"/>
+<PropertyRef Name="Zfchid"/>
+<PropertyRef Name="Zfcmid"/>
+<PropertyRef Name="Zfcactid"/>
+</Key>
+<Property Name="Bukrs" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="회사 코드" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Butxt" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="회사" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Spmon" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="결산년월" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfchid" Type="Edm.String" Nullable="false" MaxLength="2" sap:unicode="false" sap:label="대분류 ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfcmid" Type="Edm.String" Nullable="false" MaxLength="4" sap:unicode="false" sap:label="중분류 ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfcactid" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="결산 Activity ID" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfchidt" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:label="대분류 내역" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfcmidt" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:label="중분류 내역" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfcactidt" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:label="결산 Activity 내역" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfccycle" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="결산주기" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zfcdue" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="결산기한" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Kostl" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="코스트 센터" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Ktext" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="팀" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="Bname" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="사용자 마스터 레코드의 사용자 이름" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Name_last" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="담당자" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Pldat" Type="Edm.DateTime" Nullable="false" Precision="7" sap:unicode="false" sap:label="계획완료일" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Pltim" Type="Edm.Time" Nullable="false" Precision="0" sap:unicode="false" sap:label="계획완료시간" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Acdat" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="실제완료일" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Actim" Type="Edm.Time" Precision="0" sap:unicode="false" sap:label="실제완료시간" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="상태" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="Zcomment" Type="Edm.String" MaxLength="255" sap:unicode="false" sap:label="코멘트" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityType Name="TilebyCompany" sap:content-version="1">
+<Key>
+<PropertyRef Name="key"/>
+</Key>
+<Property Name="key" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="icon" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="info" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="infoState" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="number" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="numberDigits" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="numberFactor" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="numberState" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="numberUnit" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="stateArrow" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="subtitle" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="targetParams" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="title" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="unit" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="footer" Type="Edm.String" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="title1" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+<Property Name="value1" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Signed INT2 / int16" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="color1" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="title2" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="value2" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Signed INT2 / int16" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="color2" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="title3" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="value3" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Signed INT2 / int16" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+<Property Name="color3" Type="Edm.String" Nullable="false" sap:unicode="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+</EntityType>
+<EntityContainer Name="ZUX_FI_03_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+<EntitySet Name="WorklistSet" EntityType="ZUX_FI_03_SRV.Worklist" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+<EntitySet Name="holidaySet" EntityType="ZUX_FI_03_SRV.holiday" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+<EntitySet Name="CalendarSet" EntityType="ZUX_FI_03_SRV.Calendar" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+<EntitySet Name="TilebyCompanySet" EntityType="ZUX_FI_03_SRV.TilebyCompany" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
+</EntityContainer>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/ZUX_FI_03_SRV/$metadata"/>
+<atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="https://VHSIHWS1WD01.SAP.SMILEGATE.NET:44380/sap/opu/odata/SAP/ZUX_FI_03_SRV/$metadata"/>
+</Schema>
+</edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,143 @@
+<mvc:View
+	controllerName="com.smilegate.zappfi001.controller.Object"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.f.semantic"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:l="sap.ui.layout">
+
+	<semantic:SemanticPage
+		id="SingleObjectPage01"
+		headerPinnable="false"
+		toggleHeaderOnTitleClick="false"
+		busy="{objectView>/busy}"
+		busyIndicatorDelay="{objectView>/delay}">
+		<semantic:titleHeading>
+			<!-- <Title 	id="SingleObjectTitle01" text="{i18n>objectViewTitle}" /> -->
+				<Title 	id="SingleObjectTitle01" text="{Butxt}" />
+		</semantic:titleHeading>
+		<semantic:closeAction>
+			<semantic:CloseAction id = "SingleObjectCloseAction01" press=".onClose"/>
+		</semantic:closeAction>
+		<semantic:headerContent>
+			<FlexBox
+				id="SingleObjectFlex01"
+				alignItems="Start"
+				justifyContent="SpaceBetween">
+				<Panel id="SingleObjectPanel01" backgroundDesign="Transparent">
+					<ObjectAttribute
+						id="SingleObjectObjectAttribute01"
+						title="{/#Single/Zfchidt/@sap:label}"
+						text="{Zfchidt}"/>
+					<ObjectAttribute
+						id="SingleObjectObjectAttribute02"
+						title="{/#Single/Zfcmidt/@sap:label}"
+						text="{Zfcmidt}"/>
+				</Panel>
+				<Panel id="SingleObjectPanel02" backgroundDesign="Transparent">
+					<ObjectStatus
+						id="SingleObjectObjectStatus01"
+						text="{
+							path: 'Status',
+							formatter: '.formatter.Status'}"
+						state="{
+							path: 'Status',
+							formatter: '.formatter.StatusState'}"/>
+					<VBox id="SingleObjectVBox01" />
+					<ObjectStatus
+							id="SingleObjectObjectStatus02"
+							text="{path: 'Acdat',
+								   type : 'sap.ui.model.type.Date',
+									formatOptions : {pattern : 'yyyy/MM/dd'}}"
+							state="{
+								path: 'Status',
+								formatter: '.formatter.StatusState'}"/>
+					<VBox id="SingleObjectVBox02"/>
+					<ObjectStatus
+						id="SingleObjectObjectStatus03"
+						text="{
+							path:'Actim',
+							formatter:'.formatter.TimeSet'}"	
+						state="{
+							path: 'Status',
+							formatter: '.formatter.StatusState'}"/>
+				</Panel>
+			</FlexBox>
+		</semantic:headerContent>
+		<semantic:content>
+			<l:VerticalLayout id="SingleObjectVerticalLayout01" width="100%">
+				<Panel
+					id="SingleObjectPanel03"
+					backgroundDesign="Transparent"
+					headerText="{i18n>ObjectPaneInfo}">
+					<content>
+						<form:SimpleForm
+							id="SingleObjectSimpleForm01"
+							minWidth="1024"
+							maxContainerCols="10"
+							editable="false"
+							layout="ResponsiveGridLayout"
+							labelSpanL="3"
+							labelSpanM="3"
+							emptySpanL="1"
+							emptySpanM="1"
+							columnsL="1"
+							columnsM="1">
+							<form:content>
+								<Label id="SingleObjectLabel01" text="{/#Single/Pldat/@sap:label}"/>
+								<Text  id="SingleObjectText01" 
+									text="{path: 'Pldat',
+										type : 'sap.ui.model.type.Date',
+										formatOptions : {pattern : 'yyyy/MM/dd'}}"/>
+								<Label id="SingleObjectLabel02" text="{/#Single/Zfchidt/@sap:label}"/>
+								<Text  id="SingleObjectText02"  text="{Zfchidt}"/>
+								<Label id="SingleObjectLabel03" text="{/#Single/Zfcmidt/@sap:label}"/>
+								<Text  id="SingleObjectText03"  text="{Zfcmidt}"/>
+								<Label id="SingleObjectLabel04" text="{/#Single/Zfcactidt/@sap:label}"/>
+								<Text  id="SingleObjectText04"  text="{Zfcactidt}"/>
+								<Label id="SingleObjectLabel05" text="{/#Single/Name_last/@sap:label}"/>
+								<Text  id="SingleObjectText05"  text="{Name_last}"/>
+							</form:content>
+						</form:SimpleForm>
+					</content>
+				</Panel>
+				<Panel
+					id="SingleObjectPanel04"
+					backgroundDesign="Transparent"
+					headerText="{i18n>ObjectmeomoTabTitle}">
+					<content>
+						<FlexBox
+							id="SingleObjectFlex02"
+							width="100%"
+							height="100%"
+							class = "commetFlexbox">
+								<TextArea
+									id="SingleObjectTextArea02"
+									width="98%"
+									editable="{objectView>/editable}"
+									maxLength="255"
+									cols="145"
+									rows="3"
+									value="{Feedback>/Comment}"
+									>
+									<layoutData>
+										<FlexItemData id="SingleObjectFlexItemData01" growFactor="1" />
+									</layoutData>
+								</TextArea>
+								<Button
+									id="SingleObjectButton01"
+									class="CommentButton CommentButtoninner Commenticon"
+									icon = "sap-icon://navigation-right-arrow"
+									enabled="{objectView>/editable}"
+									press="onPost">
+									<layoutData>
+										<FlexItemData id="SingleObjectFlexItemData02" growFactor="1" />
+									</layoutData>
+								</Button>
+						</FlexBox>
+					</content>
+				</Panel>
+			</l:VerticalLayout>
+		</semantic:content>
+	</semantic:SemanticPage>
+</mvc:View>
