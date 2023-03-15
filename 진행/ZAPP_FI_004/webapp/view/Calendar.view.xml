@@ -1,0 +1,72 @@
+<mvc:View controllerName="com.smilegate.zappfi004.controller.Calendar"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:unified="sap.ui.unified"
+    xmlns:l="sap.ui.layout">
+    <Page id="app" title="{settings>/title}">
+        <content>
+            <l:VerticalLayout width="100%" id ="layout01">
+                <VBox class="sapUiSmallMargin" id = "Vbox01">
+                    <SinglePlanningCalendar
+                        id="oSPC01"
+                        class="sapUiSmallMarginTop"
+                        title= "{settings>/subtitle}"
+                        appointmentSelect="_privateHandleAppointmentSelect"
+                        moreLinkPress="handleMoreLinkPress"
+                        startDateChange="handleStartDateChange"
+                        startDate="{path : 'oData>/startDate' }"
+                        enableAppointmentsDragAndDrop="{settings>/enableAppointmentsDragAndDrop}"
+                        enableAppointmentsResize="{settings>/enableAppointmentsResize}"
+                        enableAppointmentsCreate="{settings>/enableAppointmentsCreate}"
+                        stickyMode="{settings>/stickyMode}"
+                        specialDates="{path: 'oData>/HolidaySet' }"
+                        appointments="{ path : 'oData>/PathSet',
+                                        sorter: [
+                                        {path : 'Pldat', descending : false},
+                                        {path : 'Zfchid', descending : false},
+                                        {path : 'Zfcmid', descending : false}
+                                        ]}">
+                        <views>
+                            <SinglePlanningCalendarDayView id="oDayView01" key="DayView" title="{i18n>SinglePlanningCalendarDayView}" />
+                            <SinglePlanningCalendarWorkWeekView id="oWorkweek01" key="WorkWeekView" title="{i18n>SinglePlanningCalendarWorkWeekView}" />
+                            <SinglePlanningCalendarWeekView id="oWeekView01" key="WeekView" title="{i18n>SinglePlanningCalendarWeekView}" />
+                            <SinglePlanningCalendarMonthView id="oMonthView01" key="MonthView" title="{i18n>SinglePlanningCalendarMonthView}" />
+                        </views>
+                        <actions>
+                            <ComboBox id="oComboBox01"
+                                      selectedKey="{oData>/FilterKey}"
+                                      change=".handleComoboxChange"
+                                      items="{oData>/FilterSet}">
+                                <core:Item key="{oData>key}" text="{oData>value}"/>
+                            </ComboBox>
+                        </actions>
+                        <specialDates>
+                            <unified:DateTypeRange 
+                                id = "ospecialDate01"
+                                startDate="{oData>Date}"
+                                endDate="{oData>Date}"
+                                type="{ path : 'oData>TxtShort',
+                                        formatter : '.formatter.specialType'}"
+                            />
+                        </specialDates>
+                        <appointments>
+                            <unified:CalendarAppointment
+                                id = "oappointment01"
+                                title = "[{oData>Zfcmidt}]/{oData>Zfcactidt}/{oData>Name_last}"
+                                type  = "{path : 'oData>Status',
+                                        formatter : '.formatter.StatusType'}"
+                                startDate = "{ parts: [
+                                                    {path : 'oData>Pldat'}],
+                                            formatter: '.formatter.Dateset'}"
+                                endDate = "{ parts: [
+                                                        {path : 'oData>Pldat'}],
+                                            formatter: '.formatter.Dateset'}"
+                            />
+                        </appointments>
+                    </SinglePlanningCalendar>
+                </VBox>
+            </l:VerticalLayout>
+        </content>
+    </Page>
+</mvc:View>

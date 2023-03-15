@@ -1,0 +1,47 @@
+/* Enter your custom styles here */
+
+
+ .sapMSinglePCRowHeader {
+    display: none;
+}
+
+.sapMSinglePCRow {
+    display: none;
+}
+
+ .sapMSinglePCNowMarketText {
+    display: none
+}
+
+.sapMSinglePCNowMarker {
+    display: none;
+}
+.sapMPageEnableScrolling {
+    display: none;
+}
+
+.sapUiScrollDelegate {
+    display: flex;
+}
+
+.sapMShellAppWidthLimited .sapMShellCentralBox {
+    width: 100% !important;
+    margin-left: 0px !important;
+    left: 0 !important;
+}
+
+.sapMSPCMonthDay.sapUiCalendarSpecialDayType04 {background: #af081b1a !important;}
+.sapUiCalItem.sapUiCalWDay0.sapUiCalItemType04 {background: #af081b1a;}
+.sapUiCalItem.sapUiCalWDay1.sapUiCalItemType04 {background: #af081b1a;}
+.sapUiCalItem.sapUiCalWDay2.sapUiCalItemType04 {background: #af081b1a;}
+.sapUiCalItem.sapUiCalWDay3.sapUiCalItemType04 {background: #af081b1a;}
+.sapUiCalItem.sapUiCalWDay4.sapUiCalItemType04 {background: #af081b1a;}
+.sapUiCalItem.sapUiCalWDay5.sapUiCalItemType04 {background: #af081b1a;}
+.sapUiCalItem.sapUiCalWDay6.sapUiCalItemType04 {background: #af081b1a;}
+.sapUiCalItemType04 {color: #fd0522;}
+.sapUiCalItem.sapUiCalWDay0.sapUiCalFirstWDay.sapUiCalItemWeekEnd.sapUiCalItemWeekEnd {background: #af081b1a; color : #fd0522;}
+.sapUiCalItem.sapUiCalWDay6.sapUiCalItemWeekEnd {background: #92b0f1; color : #1d12f7;}
+.sapUiCalWH.sapUiCalFirstWDay.sapUiCalItemWeekEnd {background: #af081b1a; color : #fd0522;}
+.sapUiCalWH.sapUiCalItemWeekEnd {background: #92b0f1; color : #1d12f7;}
+div.sapUiCalendarSpecialDayType04 > .sapMSPCMonthDayNumber {color: #fd0522;}
+

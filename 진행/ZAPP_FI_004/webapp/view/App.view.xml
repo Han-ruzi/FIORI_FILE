@@ -1,0 +1,7 @@
+<mvc:View controllerName="com.smilegate.zappfi004.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Shell>
+        <App id="app" backgroundOpacity="0.3"/>
+    </Shell>   
+</mvc:View>

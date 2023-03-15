@@ -1,0 +1,20 @@
+{
+    "deploy": {
+    "sourceFolder": "./dist",
+    "conn_usestrictssl" : false,
+    "targetSystem": "https://vhsihws1wd01.sap.smilegate.net:44380/",
+    "destinationName": "DS4",
+    "client": "300",
+    "username": "es-bsh217",
+    "password": "Smilegate000#",
+    "appName": "zapp_fi_004",
+    "description":"[FIORI] Financial Closing Activity Calendar",
+    "abapPackage": "ZFIORI",
+    "abapTransport": "DS4K901735"
+    
+    },
+    "cli": {
+    "interactiveFallBack": true
+    }
+    
+}

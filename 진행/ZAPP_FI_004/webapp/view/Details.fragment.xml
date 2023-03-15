@@ -1,0 +1,49 @@
+<core:FragmentDefinition
+		xmlns="sap.m"
+		xmlns:f="sap.ui.layout.form"
+		xmlns:core="sap.ui.core">
+	<ResponsivePopover
+			id="SingledetailsPopover01"
+			title="{ path : 'Pldat',
+					 formatter: '.formatter.DialogDateSet'}"
+			class="sapUiResponsivePadding--header"
+			placement="Auto">
+
+		<f:SimpleForm
+				id="SingledetailsappointmentForm01"
+				editable="false"
+				layout="ResponsiveGridLayout"
+				singleContainerFullSize="false">
+
+				<Label  id="SingledetailsLabel01" text="{/#Single/Zfchidt/@sap:label} "/>
+				<HBox   id="SingledetailsHBox01"  width="10px"/>
+				<Text   id="SingledetailsText01"  text="{ path: 'Zfchidt'}"/>
+		
+		
+				<Label id="SingledetailsLabel02" text="{/#Single/Zfcmidt/@sap:label} "/>
+				<HBox  id="SingledetailsHBox02"  width="10px"/>
+				<Text  id="SingledetailsText02"  text="{ path: 'Zfcmidt'}"/>
+		
+	
+				<Label id="SingledetailsLabel03" text="{/#Single/Zfcactidt/@sap:label} "/>
+				<HBox  id="SingledetailsHBox03"  width="10px"/>
+				<Text  id="SingledetailsText03"  text="{ path: 'Zfcactidt'}"/>
+		
+				<Label id="SingledetailsLabel04" text="{/#Single/Ktext/@sap:label}"/>
+				<HBox  id="SingledetailsHBox04"  width="10px"/>
+				<Text  id="SingledetailsText04"  text="{ path: 'Ktext'}"/>
+	
+				<Label id="SingledetailsLabel05" text="{/#Single/Name_last/@sap:label} "/>
+				<HBox  id="SingledetailsHBox05"  width="10px"/>
+				<Text  id="SingledetailsText05"  text="{ path: 'Name_last'}"/>
+
+				<Label id="SingledetailsLabel06"  text="{/#Single/Status/@sap:label} "/>
+				<HBox  id="SingledetailsHBox06"  width="10px"/>
+				<Text  id="SingledetailsText06"  text="{ path: 'Status', formatter: '.formatter.Status'}"/>
+
+		</f:SimpleForm>
+		<beginButton>
+			<Button id="SingledetailsButton01" text="{i18n>PopOverBeginButton}" press="handlePopoverCloseButton" />
+		</beginButton>
+	</ResponsivePopover>
+</core:FragmentDefinition>
