@@ -133,51 +133,51 @@ sap.ui.define([
 			this.setModel(oViewModel, "worklistView");
 
 
-			// var oTable = this.getView().byId("SingleWorklisttable01");
-		    // var oToolbar = this.getView().byId("datelabel01"); // 툴바 컨트롤의 ID를 사용하여 컨트롤 객체 가져오기
-			// var aContent = oToolbar.getProperty("text");
-			// var flDate= this.onDayFirstLast(aContent,"T");
+			var oTable = this.getView().byId("SingleWorklisttable01");
+		    var oToolbar = this.getView().byId("datelabel01"); // 툴바 컨트롤의 ID를 사용하여 컨트롤 객체 가져오기
+			var aContent = oToolbar.getProperty("text");
+			var flDate= this.onDayFirstLast(aContent,"T");
 
 			// 			            // Filter 
-			// this._mFilters = {
-			// 					"complete": [new Filter("Status", FilterOperator.BT,"C", "C"),
-			// 					             new Filter("Pldat", FilterOperator.BT ,flDate.Fdate, flDate.Ldate)
-			// 				    ],
+			this._mFilters = {
+								"complete": [new Filter("Status", FilterOperator.BT,"C", "C"),
+								             new Filter("Pldat", FilterOperator.BT ,flDate.Fdate, flDate.Ldate)
+							    ],
 
-			// 					"progress": [new Filter("Status", FilterOperator.BT,"P" ,"P")],
-			// 					"delay": [new Filter("Status", FilterOperator.BT, "D","D")],
-			// 					"wait": [new Filter("Status", FilterOperator.BT, "W","W")],
-			// 					"countAll": []
-			// };
+								"progress": [new Filter("Status", FilterOperator.BT,"P" ,"P")],
+								"delay": [new Filter("Status", FilterOperator.BT, "D","D")],
+								"wait": [new Filter("Status", FilterOperator.BT, "W","W")],
+								"countAll": []
+			};
 			
-			//Table Event handler - Column Dialog 생성 
-			// if(!this._oResponsivePopover){
+			// Table Event handler - Column Dialog 생성 
+			if(!this._oResponsivePopover){
 				
-			// 	this._oResponsivePopover =  Fragment.load({
-			// 		id   :  this.createId("ColumnPopover01"),
-			// 		name : "com.smilegate.zappfi001.view.ColumnPopover",
-			// 		controller: this
-			// 	}).then(function(_oResponsivePopover){
+				this._oResponsivePopover =  Fragment.load({
+					id   :  this.createId("ColumnPopover01"),
+					name : "com.smilegate.zappfi001.view.ColumnPopover",
+					controller: this
+				}).then(function(_oResponsivePopover){
 					
-			// 		oView.addDependent(_oResponsivePopover);
-			// 		return _oResponsivePopover;
-			// 	});
-			// }
+					oView.addDependent(_oResponsivePopover);
+					return _oResponsivePopover;
+				});
+			}
 
-			//Table Event handler - Column Filter Set
-			// oTable.addEventDelegate({
-			// 	onAfterRendering : function(){
-			// 		var oHeader = this.$().find('.sapMListTblHeaderCell');
+			// Table Event handler - Column Filter Set
+			oTable.addEventDelegate({
+				onAfterRendering : function(){
+					var oHeader = this.$().find('.sapMListTblHeaderCell');
 
-			// 		// that.setLog(">---- call function : _customClick");
-			// 		for(var i = 0; i < oHeader.length; i++){
-			// 			var oID = oHeader[i].id;
+					that.setLog(">---- call function : _customClick");
+					for(var i = 0; i < oHeader.length; i++){
+						var oID = oHeader[i].id;
 						
-			// 			that._customClick(oID);
-			// 		}
-			// 	}
+						that._customClick(oID);
+					}
+				}
 
-			// }, oTable)
+			}, oTable)
 
 			
 		},

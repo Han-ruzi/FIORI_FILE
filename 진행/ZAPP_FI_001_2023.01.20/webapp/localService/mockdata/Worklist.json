@@ -2020,7 +2020,7 @@
                 "Zcomment": ""
             }, {
                 "__metadata": {
-                    "id": "/sap/opu/odata/SAP/ZUX_FI_03_SRV/WorklistSet(Bukrs='1000',Spmon='202211',Zfchid='A0',Zfcmid='001',Zfcactid='C010')",
+                    "id": "/sap/opu/odata/SAP/ZUX_FI_03_SRV/WorklistSet )",
                     "uri": "/sap/opu/odata/SAP/ZUX_FI_03_SRV/WorklistSet(Bukrs='1000',Spmon='202211',Zfchid='A0',Zfcmid='001',Zfcactid='C010')",
                     "type": "ZUX_FI_03_SRV.Worklist"
                 },
